@@ -1,0 +1,17 @@
+CREATE DATABASE `sampledb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+
+CREATE TABLE `Invoice` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `Vkn` varchar(15) DEFAULT NULL,
+  `TotalPrice` decimal(10,0) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+INSERT INTO `sampledb`.`Invoice`
+(`Vkn`,
+`TotalPrice`)
+VALUES
+('1112223336' ,
+1250);
